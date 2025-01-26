@@ -10,15 +10,24 @@
 <body>
     <?php
 
-        $age = 17;
+        $marks = 20;
 
-        if($age >= 18) {
-            echo "You are eligible to vote.";
+        if($marks < 50){
+            echo "Fail";
+        }
+        elseif($marks < 60){
+            echo "Pass";
+        }
+        elseif($marks < 75){
+            echo "Merit";
+        }
+        elseif($marks <=100 ){
+            echo "Distinction";
         }
         else{
-            echo "You are not eligible to vote.";
+            echo "Error: Invalid marks";
         }
-
+        
     ?>
 
 </body>
